@@ -31,7 +31,7 @@ import java.io.IOException;
 
 public class CreateUebungActivity extends AppCompatActivity {
 
-    Uri imageUri;
+    /*Uri imageUri;
     ImageView imageView;
     Button addButton;
     StorageReference storageReference;
@@ -39,7 +39,7 @@ public class CreateUebungActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     int Request_Code = 10;
     Uri PathUri;
-    EditText exerciseName;
+    EditText exerciseName;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
