@@ -9,9 +9,9 @@ import android.os.Bundle;
 
 import com.example.myfitnessapp3.R;
 import com.example.myfitnessapp3.databinding.ActivityMenuBinding;
-import com.example.myfitnessapp3.fragments.Excercise;
-import com.example.myfitnessapp3.fragments.Kategorien;
-import com.example.myfitnessapp3.fragments.Workouts;
+import com.example.myfitnessapp3.presentation.Excercise;
+import com.example.myfitnessapp3.presentation.Kategorien;
+import com.example.myfitnessapp3.presentation.Workouts;
 
 
 public class Menu extends AppCompatActivity {

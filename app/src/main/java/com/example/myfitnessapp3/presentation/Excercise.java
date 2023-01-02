@@ -1,11 +1,10 @@
-package com.example.myfitnessapp3.fragments;
+package com.example.myfitnessapp3.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.myfitnessapp3.activities.CreateUebungActivity;
 import com.example.myfitnessapp3.adapter.ExcerciseAdapter;

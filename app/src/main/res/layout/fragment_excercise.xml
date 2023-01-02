@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.Excercise">
+    tools:context=".presentation.Excercise">
 
     <Button
         android:id="@+id/add_exercise"
