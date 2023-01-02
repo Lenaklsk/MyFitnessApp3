@@ -1,4 +1,4 @@
-package com.example.myfitnessapp3.fertigeKlassen;
+package com.example.myfitnessapp3.ui.view.activities;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package com.example.myfitnessapp3.activities;
+package com.example.myfitnessapp3.ui.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,9 +9,9 @@ import android.os.Bundle;
 
 import com.example.myfitnessapp3.R;
 import com.example.myfitnessapp3.databinding.ActivityMenuBinding;
-import com.example.myfitnessapp3.presentation.Excercise;
-import com.example.myfitnessapp3.presentation.Kategorien;
-import com.example.myfitnessapp3.presentation.Workouts;
+import com.example.myfitnessapp3.ui.exercise.Excercise;
+import com.example.myfitnessapp3.ui.category.Kategorien;
+import com.example.myfitnessapp3.ui.workout.Workouts;
 
 
 public class Menu extends AppCompatActivity {

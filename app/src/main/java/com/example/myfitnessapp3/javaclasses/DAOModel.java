@@ -1,8 +1,6 @@
 package com.example.myfitnessapp3.javaclasses;
 
-import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.example.myfitnessapp3.ui.exercise.ExerciseModel;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -23,7 +21,7 @@ public class DAOModel {
         storageReference = FirebaseStorage.getInstance().getReference("Exercise");
     }
 
-    public Task<Void> add(Model model)
+    public Task<Void> add(ExerciseModel model)
     {
         return databaseReference.push().setValue(model);
     }

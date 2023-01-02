@@ -1,24 +1,20 @@
-package com.example.myfitnessapp3.javaclasses;
+package com.example.myfitnessapp3.ui.exercise;
 
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.Exclude;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 import java.io.Serializable;
 
-public class Model implements Serializable {
+public class ExerciseModel implements Serializable {
 
     String imageName, imageUrl;
     @Exclude
     String key;
 
-    public Model(){
+    public ExerciseModel(){
 
     }
 
-    public Model(String imageName, String imageUrl){ //String downloadUrl){
+    public ExerciseModel(String imageName, String imageUrl){ //String downloadUrl){
         this.imageName = imageName;
         this.imageUrl = imageUrl;
 

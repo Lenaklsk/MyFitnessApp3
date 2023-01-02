@@ -12,9 +12,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myfitnessapp3.activities.MainActivity2;
 import com.example.myfitnessapp3.R;
-import com.example.myfitnessapp3.activities.Menu;
+import com.example.myfitnessapp3.ui.view.activities.Menu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

@@ -1,4 +1,4 @@
-package com.example.myfitnessapp3.activities;
+package com.example.myfitnessapp3.ui.view.activities;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,8 +18,7 @@ import android.widget.Toast;
 import android.app.ProgressDialog;
 
 import com.example.myfitnessapp3.R;
-import com.example.myfitnessapp3.fertigeKlassen.MainActivity;
-import com.example.myfitnessapp3.javaclasses.Model;
+import com.example.myfitnessapp3.ui.exercise.ExerciseModel;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -123,7 +122,7 @@ public class CreateUebungActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Uri uri) {
                                     String url = uri.toString();
-                                    Model model = new Model(ImageName,url);
+                                    ExerciseModel model = new ExerciseModel(ImageName,url);
 
                                     String ImageUploadId = databaseReference.push().getKey();
                                     //c.child is condition underneath the roots. Condition: value

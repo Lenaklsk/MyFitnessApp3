@@ -1,4 +1,4 @@
-package com.example.myfitnessapp3.activities;
+package com.example.myfitnessapp3.ui.view.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myfitnessapp3.javaclasses.Model;
+import com.example.myfitnessapp3.ui.exercise.ExerciseModel;
 import com.example.myfitnessapp3.R;
-import com.example.myfitnessapp3.adapter.ExcerciseAdapter;
+import com.example.myfitnessapp3.ui.exercise.ExcerciseAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
     RecyclerView recyclerView;
     DatabaseReference database;
     ExcerciseAdapter adapter;
-    ArrayList<Model> list;
+    ArrayList<ExerciseModel> list;
     Button createUebung;
 
     @SuppressLint("MissingInflatedId")
@@ -53,7 +53,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    Model model = dataSnapshot.getValue(Model.class);
+                    ExerciseModel model = dataSnapshot.getValue(ExerciseModel.class);
                     list.add(model);
                 }
 
