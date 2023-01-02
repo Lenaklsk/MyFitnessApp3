@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateUebungActivity">
+
+        <Button
+            android:id="@+id/addUebung_button"
+            android:layout_width="201dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Add"
+            app:layout_constraintEnd_toEndOf="@+id/uebung_editText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/uebung_editText"
+            app:layout_constraintTop_toBottomOf="@+id/choose_Image" />
+
+    <EditText
+        android:id="@+id/uebung_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint="@string/enter_name"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/choose_Image"
+            android:layout_width="202dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/uebung_editText"
+            app:layout_constraintStart_toStartOf="@+id/uebung_editText"
+            app:layout_constraintTop_toBottomOf="@+id/uebung_editText"
+            app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
